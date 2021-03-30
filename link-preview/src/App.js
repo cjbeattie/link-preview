@@ -9,7 +9,7 @@ import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    <Container>
+    <Container fluid style={{ height: '100vh' }}>
       <Row>
         <Col xs="2"><Sidebar /></Col>
         <Col xs="auto"><Content /></Col>

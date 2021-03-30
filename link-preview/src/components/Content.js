@@ -17,8 +17,6 @@ const Content = () => {
     const handleClick = (link, e) => {
         e.preventDefault();
 
-        console.log("clicked!", link);
-
         axios
             .get(`http://api.linkpreview.net/?key=${process.env.REACT_APP_API_KEY}&q=${link}`)
             .then((res) => {

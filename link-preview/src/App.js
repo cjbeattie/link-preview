@@ -8,10 +8,10 @@ import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    <Container fluid style={{ height: '100vh' }}>
+    <Container fluid style={{ height: '100vh' }} >
       <Row>
-        <Col xs="2"><Sidebar /></Col>
-        <Col xs="auto"><Content /></Col>
+        <Col xs={2}><Sidebar /></Col>
+        <Col ><Content /></Col>
       </Row>
     </Container>
   );

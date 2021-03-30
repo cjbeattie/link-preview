@@ -5,8 +5,8 @@ const PreviewDisplay = (props) => {
         <>
             <Container fluid>
                 <Row>
-                    <Col xs="2"><Image src={props.data.image} fluid /></Col>
-                    <Col xs="auto">
+                    <Col xs={4}><Image src={props.data.image} fluid /></Col>
+                    <Col>
                         <h1>{props.data.title}</h1>
                         <p>{props.data.description}</p>
                     </Col>

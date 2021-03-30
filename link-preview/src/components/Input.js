@@ -1,14 +1,29 @@
 import { Form, Button } from 'react-bootstrap';
+import { useState } from 'react';
 
-const Input = () => {
+
+const Input = (props) => {
+
+    const [text, setText] = useState("Enter link");
+    const test = "test"
+
     return (
         <>
             <Form>
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Learn Content URL</Form.Label>
-                    <Form.Control type="text" placeholder="Enter link" />
+                    <Form.Control
+                        type="text"
+                        placeholder={text}
+                        onChange={(e) =>
+                            setText(e.target.value)}
+                    />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button
+                    variant="primary"
+                    type="submit"
+                    onClick={() =>
+                        props.handleClick(text)}>
                     Preview Link
                 </Button>
             </Form>

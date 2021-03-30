@@ -1,6 +1,6 @@
 import Input from './Input';
 import PreviewDisplay from './PreviewDisplay';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 
 const Content = () => {
@@ -12,9 +12,13 @@ const Content = () => {
         url: "https://www.youtube.com/watch?v=Ke90Tje7VS0"
     });
 
+    const handleClick = (text) => {
+        console.log("clicked!", text);
+    };
+
     return (
         <>
-            <Input />
+            <Input handleClick={handleClick} />
             <PreviewDisplay data={data} />
         </>
     )

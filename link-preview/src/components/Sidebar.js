@@ -11,6 +11,8 @@ const Sidebar = () => {
                 <Nav.Link as={NavLink} to="/example_page_2">Example Page 2</Nav.Link>
                 <Nav.Link as={NavLink} to="/example_page_3">Example Page 3</Nav.Link>
                 <Nav.Link as={NavLink} to="/example_page_4">Example Page 4</Nav.Link>
+                <Nav.Link as={NavLink} to="/signup">Sign Up</Nav.Link>
+
             </Nav>
         </>
     )

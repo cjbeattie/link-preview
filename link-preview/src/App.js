@@ -1,14 +1,18 @@
+import { useState } from 'react';
 import './App.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Content from './components/Content';
 import Sidebar from './components/Sidebar';
 import { Route, Switch } from "react-router-dom";
-import ExamplePage2 from './components/ExamplePage2'
-import ExamplePage3 from './components/ExamplePage3'
-import ExamplePage4 from './components/ExamplePage4'
+import ExamplePage2 from './components/ExamplePage2';
+import ExamplePage3 from './components/ExamplePage3';
+import ExamplePage4 from './components/ExamplePage4';
+import SignUp from './components/SignUp';
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
   return (
     <Container fluid className="vh-100" >
       <Row className="h-100">
@@ -28,6 +32,9 @@ function App() {
             </Route>
             <Route path="/example_page_4">
               <ExamplePage4 />
+            </Route>
+            <Route path="/signup">
+              <SignUp />
             </Route>
             <Route>
               This is an invalid link.

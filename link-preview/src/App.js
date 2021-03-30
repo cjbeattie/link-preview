@@ -10,7 +10,7 @@ function App() {
   return (
     <Container fluid className="vh-100" >
       <Row className="h-100">
-        <Col xs={2} style={{ backgroundColor: "#5bc0de" }}>
+        <Col md={2} style={{ backgroundColor: "#5bc0de" }}>
           <Sidebar />
         </Col>
         <Col >

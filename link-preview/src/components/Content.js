@@ -36,7 +36,7 @@ const Content = () => {
             <Container>
                 <Row>
                     <Col md={10}>
-                        <Input handleClick={handleClick} />
+                        <Input handleClick={handleClick} error={error} />
                         <PreviewDisplay data={data} error={error} />
                     </Col>
                 </Row>

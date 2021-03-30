@@ -29,6 +29,14 @@ const Input = (props) => {
                         </Button>
                     </Col>
                 </Form.Row>
+                <Form.Row>
+                    {props.error ?
+                        <Form.Text style={{ color: "red" }} className="mt-1 ml-2">
+                            An error has occurred while trying to retrieve the Preview Link. Please try again later!
+                        </Form.Text>
+                        :
+                        <></>}
+                </Form.Row>
             </Form>
         </>
     )

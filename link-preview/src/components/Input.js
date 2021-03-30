@@ -5,7 +5,6 @@ import { useState } from 'react';
 const Input = (props) => {
 
     const [text, setText] = useState("Enter link");
-    const test = "test"
 
     return (
         <>
@@ -22,8 +21,8 @@ const Input = (props) => {
                 <Button
                     variant="primary"
                     type="submit"
-                    onClick={() =>
-                        props.handleClick(text)}>
+                    onClick={(e) =>
+                        props.handleClick(text, e)}>
                     Preview Link
                 </Button>
             </Form>

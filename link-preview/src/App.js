@@ -1,4 +1,4 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import './App.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,9 +9,11 @@ import ExamplePage2 from './components/ExamplePage2';
 import ExamplePage3 from './components/ExamplePage3';
 import ExamplePage4 from './components/ExamplePage4';
 import SignUp from './components/SignUp';
+import Login from './components/Login';
+
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  // const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   return (
     <Container fluid className="vh-100" >
@@ -35,6 +37,9 @@ function App() {
             </Route>
             <Route path="/signup">
               <SignUp />
+            </Route>
+            <Route path="/login">
+              <Login />
             </Route>
             <Route>
               This is an invalid link.

@@ -3,7 +3,6 @@ import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 const SignUp = () => {
     return (
         <>
-
             <Container className="mt-4">
                 <Row className="vh-100">
                     <Col md={10}>
@@ -13,7 +12,7 @@ const SignUp = () => {
                                 <Form.Control type="email" placeholder="Enter email" />
                                 <Form.Text className="text-muted">
                                     We'll never share your email with anyone else.
-                    </Form.Text>
+                                </Form.Text>
                             </Form.Group>
 
                             <Form.Group controlId="formBasicPassword">
@@ -22,12 +21,11 @@ const SignUp = () => {
                             </Form.Group>
                             <Button variant="primary" type="submit">
                                 Submit
-                </Button>
+                            </Button>
                         </Form>
                     </Col>
                 </Row>
             </Container>
-
         </>
     )
 }

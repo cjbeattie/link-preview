@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const Sidebar = () => {
     return (
         <>
-            <p className="mt-4" style={{ color: 'white' }}>ONLOOP ADMIN</p>
+            <p className="mt-4" style={{ color: 'white' }}>COMPANY ADMIN</p>
             <Nav defaultActiveKey="/" className="flex-column">
                 <Nav.Link as={NavLink} to="/">Home</Nav.Link>
                 <Nav.Link as={NavLink} to="/example_page_2">Example Page 2</Nav.Link>

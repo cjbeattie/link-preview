@@ -9,7 +9,7 @@ const PreviewDisplay = (props) => {
                     </Row>
                     :
                     <Row className="vh-100 align-content-start">
-                        <Col xs={4}>
+                        <Col md={4}>
                             <Image src={props.data.image} fluid />
                         </Col>
                         <Col>

@@ -1,8 +1,6 @@
 const Sidebar = () => {
     return (
-        <>
-            <div className="mt-4" style={{ color: 'white' }}>ONLOOP ADMIN</div>
-        </>
+        <p className="mt-4" style={{ color: 'white' }}>ONLOOP ADMIN</p>
     )
 }
 

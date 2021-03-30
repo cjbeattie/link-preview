@@ -9,11 +9,9 @@ const Input = (props) => {
     return (
         <>
             <Form className="mt-4">
-
-                {/* <Form.Group controlId="formBasicEmail"> */}
                 <Form.Label>Learn Content URL</Form.Label>
                 <Form.Row>
-                    <Col>
+                    <Col className="mt-2">
                         <Form.Control
                             type="text"
                             placeholder={text}
@@ -21,9 +19,9 @@ const Input = (props) => {
                                 setText(e.target.value)}
                         />
                     </Col>
-                    <Col xs="auto">
+                    <Col md="auto" className="mt-2">
                         <Button
-                            variant="primary"
+                            variant="info"
                             type="submit"
                             onClick={(e) =>
                                 props.handleClick(text, e)}>
@@ -31,9 +29,6 @@ const Input = (props) => {
                         </Button>
                     </Col>
                 </Form.Row>
-
-                {/* </Form.Group> */}
-
             </Form>
         </>
     )

@@ -13,7 +13,7 @@ function App() {
         <Col md={2} style={{ backgroundColor: "#5bc0de" }}>
           <Sidebar />
         </Col>
-        <Col >
+        <Col>
           <Content />
         </Col>
       </Row>

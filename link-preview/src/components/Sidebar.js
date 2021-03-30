@@ -1,7 +1,7 @@
 const Sidebar = () => {
     return (
         <>
-            Sidebar
+            <div className="mt-4" style={{ color: 'white' }}>ONLOOP ADMIN</div>
         </>
     )
 }

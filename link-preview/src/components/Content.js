@@ -7,6 +7,7 @@ import axios from "axios";
 
 const Content = () => {
 
+    const [error, setError] = useState(false);
     const [data, setData] = useState({
         title: "",
         description: "",
@@ -33,14 +34,15 @@ const Content = () => {
                 setData(res.data);
             })
             .catch((error) => {
-                console.log("Error", error);
+                console.log(error);
+                setError(true);
             });
     };
 
     return (
         <>
             <Input handleClick={handleClick} />
-            <PreviewDisplay data={data} />
+            <PreviewDisplay data={data} error={error} />
         </>
     )
 }

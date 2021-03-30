@@ -8,7 +8,7 @@ const Input = (props) => {
 
     return (
         <>
-            <Form>
+            <Form className="mt-4">
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Learn Content URL</Form.Label>
                     <Form.Control

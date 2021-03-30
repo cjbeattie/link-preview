@@ -8,6 +8,9 @@ const SignUp = () => {
                     <Col md={10}>
                         <Form>
                             <Form.Group controlId="formBasicEmail">
+                                <Form.Text className="text-muted">
+                                    **** Signup not working yet! ****
+                                </Form.Text>
                                 <Form.Label>Email address</Form.Label>
                                 <Form.Control type="email" placeholder="Enter email" />
                                 <Form.Text className="text-muted">

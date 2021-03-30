@@ -3,7 +3,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 const PreviewDisplay = (props) => {
     return (
         <>
-            <Container fluid>
+            <Container fluid className="mt-5">
                 {props.error ?
                     <Row>
                         <Col>

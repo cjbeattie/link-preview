@@ -2,6 +2,8 @@ import Input from './Input';
 import PreviewDisplay from './PreviewDisplay';
 import { useState } from 'react';
 import axios from "axios";
+import { Container, Row, Col } from 'react-bootstrap';
+
 
 
 
@@ -32,6 +34,7 @@ const Content = () => {
             .then((res) => {
                 console.log("success! ", res)
                 setData(res.data);
+                setError(false);
             })
             .catch((error) => {
                 console.log(error);
@@ -41,8 +44,16 @@ const Content = () => {
 
     return (
         <>
-            <Input handleClick={handleClick} />
-            <PreviewDisplay data={data} error={error} />
+            <Container>
+                <Row>
+                    <Col xs={10}>
+                        <Input handleClick={handleClick} />
+                        <PreviewDisplay data={data} error={error} />
+                    </Col>
+                </Row>
+
+            </Container>
+
         </>
     )
 }
